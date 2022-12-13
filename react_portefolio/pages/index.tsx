@@ -18,6 +18,8 @@ export default function Home() {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css?"
         />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet"/>
+
       </Head>
 
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
@@ -67,8 +69,8 @@ export default function Home() {
               Eithan Nakache
             </h2>
             <p className="text-md py-5 leading-8 text-gray-600">
-              Hi, I'm Eithan, a 21 years old engineering student in computer
-              science at EPITA. I'm passionate about new technologies and I'm
+              Hi, I am Eithan, a 21 years old engineering student in computer
+              science at EPITA. I am passionate about new technologies and I am
               always looking for new challenges.
             </p>
           </div>
