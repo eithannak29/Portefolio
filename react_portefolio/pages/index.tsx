@@ -18,7 +18,6 @@ export default function Home() {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css?"
         />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet"></link>
       </Head>
 
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
