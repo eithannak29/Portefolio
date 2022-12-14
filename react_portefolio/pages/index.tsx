@@ -205,7 +205,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
             <div className="bg-white rounded-md p-5 shadow-md dark:bg-gray-800">
               <h3 className="text-2xl text-blue-400 font-medium font-montserrat">Portfolio</h3>
-              <p className="py-5 mb-6 text-gray-500">
+              <p className="py-5 text-gray-500">
                 This portfolio website was built using Next.js and Tailwind CSS.
               </p>
               <a
@@ -228,7 +228,7 @@ export default function Home() {
             </div>
             <div className="bg-white rounded-md p-5 shadow-md dark:bg-gray-800">
               <h3 className="text-2xl text-blue-400 font-medium font-montserrat">Dimensions</h3>
-              <p className="py-5 mb-6 text-gray-500">
+              <p className="py-5 text-gray-500">
                 S2 video game project in which we had to create a 3D game in Unity.
               </p>
               <a
