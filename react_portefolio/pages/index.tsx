@@ -101,6 +101,12 @@ export default function Home() {
                 <li className="py-5">
                   <img
                     className="object-scale-down h-32 w-64"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                  />
+                </li>
+                <li className="py-5">
+                  <img
+                    className="object-scale-down h-32 w-64"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
                   />
                 </li>
@@ -191,6 +197,12 @@ export default function Home() {
                   <img
                     className="object-scale-down h-32 w-64"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg"
+                  />
+                </li>
+                <li className="py-5">
+                  <img
+                    className="object-scale-down h-32 w-64"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
                   />
                 </li>
               </ul>
