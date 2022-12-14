@@ -245,10 +245,10 @@ export default function Home() {
           <h2 className="text-5xl text-center text-blue-400 font-medium font-montserrat">
             Contact
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 py-10 justify-center">
-            <div className="bg-white rounded-md p-5 shadow-md dark:bg-gray-800 ">
-              <h3 className="text-2xl text-gray-500 font-medium font-montserrat">eithannakache@gmail.com</h3>
-            </div>
+          <div className="grid  py-10 justify-center">
+              <div className="bg-white rounded-md p-5 shadow-md dark:bg-gray-800">
+                <h3 className="text-xl text-gray-500 font-medium font-montserrat">eithannakache@gmail.com</h3>
+              </div>
           </div>
         </section>
       </main>
