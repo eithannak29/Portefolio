@@ -86,7 +86,7 @@ export default function Home() {
               </p>
               <a
                  className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full"
-                href="https://github.com/eithannak29/ocr"
+               
               >
                 View
               </a>
@@ -134,7 +134,6 @@ export default function Home() {
               </p>
               <a
                  className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full"
-                href=""
               >
                 View
               </a>
