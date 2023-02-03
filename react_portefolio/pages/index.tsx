@@ -208,8 +208,6 @@ export default function Home() {
               </ul>
             </div>
             <div className='bg-white rounded-md p-5 shadow-md dark:bg-gray-800'>
-              <h3 className='text-2xl text-teal-600 font-medium'>Framework</h3>
-            <div className="bg-white rounded-md p-5 shadow-md dark:bg-gray-800">
               <h3 className="text-2xl text-blue-400 font-medium font-montserrat border-b-4">Tools</h3>
               <ul className=" py-5 flex flex-wrap justify-center">
                 <li className="py-2">
@@ -268,7 +266,6 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-          </div>
           </div>
         </section>
 
