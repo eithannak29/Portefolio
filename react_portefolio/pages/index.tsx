@@ -43,21 +43,28 @@ export default function Home() {
           </nav>
 
           <div id="Home" className="text-center p-10">
-            <h2 className="text-5xl py-2 text-blue-400 font-medium font-montserrat">
+            <h1 className="text-5xl text-blue-400 font-medium font-montserrat">
               Eithan Nakache
-            </h2>
+            </h1>
+
             <p className="text-md py-5 leading-8 text-gray-600">
-              Hi, I am Eithan, a 21 years old engineering student in computer
+              Hi, I am Eithan, a 22 years old engineering student in computer
               science at EPITA. I am passionate about new technologies and I am
               always looking for new challenges.
             </p>
           </div>
-          <div  className="text-5xl flex justify-center gap-16 py-3 text-gray-500">
-            <a className="transform transition-all duration-300 hover:scale-150 hover:shadow-xl" href="https://www.linkedin.com/in/eithan-nakache-49254a195/">
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-500">
+            <a
+              className="transform transition-all duration-300 hover:scale-150 hover:shadow-xl"
+              href="https://www.linkedin.com/in/eithan-nakache-49254a195/"
+            >
               {" "}
               <AiFillLinkedin />{" "}
             </a>
-            <a className="transform transition-all duration-300 hover:scale-150 hover:shadow-xl" href="https://github.com/eithannak29">
+            <a
+              className="transform transition-all duration-300 hover:scale-150 hover:shadow-xl"
+              href="https://github.com/eithannak29"
+            >
               {" "}
               <AiFillGithub />{" "}
             </a>
@@ -78,41 +85,51 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
             <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
-              <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                Shell 42sh
-              </h3>
+              <div className="flex items-center">
+                <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
+                  Shell 42sh
+                </h3>
+                <img
+                  className="object-scale-down h-8 w-16"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                />
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />        
+              </div>
+
               <p className="py-5 text-gray-500">
                 Programming of a POSIX compliant command interpreter in C
               </p>
-              <a
-                 className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full"
-               
-              >
+              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
                 View
               </a>
             </div>
 
             <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+            <div className="flex items-center">
               <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
                 Portfolio
               </h3>
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+            </div>
               <p className="py-5 text-gray-500">
                 This portfolio website was built using Next.js and Tailwind CSS
               </p>
               <a
-                 className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full"
+                className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full"
                 href="https://github.com/eithannak29/Portefolio"
               >
                 View
               </a>
             </div>
-
-           
-
             <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+              <div className="flex items-center">
               <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
                 Dimensions
               </h3>
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" />
+              </div>
               <p className="py-5 text-gray-500">
                 Video game project in which we had to create a 3D game in Unity
               </p>
@@ -125,30 +142,122 @@ export default function Home() {
             </div>
 
             <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+              <div className="flex items-center">
               <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
                 OCR
               </h3>
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+              </div>
               <p className="py-5 text-gray-500">
                 Optical character recognition project to extract sudoku grids
                 from images and solve them in C
               </p>
-              <a
-                 className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full"
-              >
+              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
                 View
               </a>
             </div>
+            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+              < div className="flex items-center">
+              <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
+                Malloc
+              </h3>
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+              </div>
+              <p className="py-5 text-gray-500">
+                Implementation of the malloc, free and realloc functions in C
+              </p>
+              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+                View
+              </a>
+            </div>
+            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+              <div className="flex items-center">
+              <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
+                Chess Engine | AI
+              </h3>
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+              </div>
+              <p className="py-5 text-gray-500">
+                Implementation of a chess engine and an AI to play against it in
+                C++
+              </p>
+              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+                View
+              </a>
+            </div>
+            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+              <div className="flex items-center">
+              <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
+                Spider
+              </h3>
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+              </div>
+              <p className="py-5 text-gray-500">
+                Implementation of a web server in C++, using the Boost library
+              </p>
+              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+                View
+              </a>
+            </div>
+            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+              <div className="flex items-center">
+              <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
+                Tiger Compiler
+              </h3>
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+              </div>
+              <p className="py-5 text-gray-500">
+                Implementation of a compiler for the Tiger language in C++
+              </p>
+              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+                View
+              </a>
+            </div>
+          
+            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+              <div className="flex items-center">
+              <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
+                JWS
+              </h3>
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+              </div>
+              <p className="py-5 text-gray-500">
+                Implementation of a quarkus web server in Java
+              </p>
+              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+                View
+              </a>
+            </div>
+            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+              <div className="flex items-center">
+              <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
+                EvalExpr
+              </h3>
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+              </div>
+              <p className="py-5 text-gray-500">
+                Implementation of a calculator in C with the shunting-yard algorithm and a stack data structure
+              </p>
+              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+                View
+              </a>
+              </div>
           </div>
         </section>
 
         <section className="py-10">
-        <h2 id="Skills" className="text-5xl text-center text-blue-400 font-medium font-montserrat">
+          <h2
+            id="Skills"
+            className="text-5xl text-center text-blue-400 font-medium font-montserrat"
+          >
             Skills
-        </h2>
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-10 mt-10">
             <div className="bg-white rounded-md p-5 shadow-md dark:bg-gray-800">
-              <h3 className="text-xl text-blue-400 font-medium font-montserrat border-b-4">Languages</h3>
+              <h3 className="text-xl text-blue-400 font-medium font-montserrat border-b-4">
+                Languages
+              </h3>
               <ul className="py-5 flex flex-wrap justify-center">
                 <li className="py-3">
                   <img
@@ -162,10 +271,17 @@ export default function Home() {
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
                   />
                 </li>
+
                 <li className="py-3">
                   <img
                     className="object-scale-down h-24 w-48 transform transition-all duration-300 hover:scale-105 hover:shadow-l"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                  />
+                </li>
+                <li className="py-3">
+                  <img
+                    className="object-scale-down h-24 w-48 transform transition-all duration-300 hover:scale-105 hover:shadow-l"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
                   />
                 </li>
                 <li className="py-3">
@@ -206,8 +322,10 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className='bg-white rounded-md p-5 shadow-md dark:bg-gray-800'>
-              <h3 className="text-2xl text-blue-400 font-medium font-montserrat border-b-4">Tools</h3>
+            <div className="bg-white rounded-md p-5 shadow-md dark:bg-gray-800">
+              <h3 className="text-2xl text-blue-400 font-medium font-montserrat border-b-4">
+                Tools
+              </h3>
               <ul className=" py-5 flex flex-wrap justify-center">
                 <li className="py-2">
                   <img
@@ -267,8 +385,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-
 
         <section id="Contact" className="py-20">
           <h2 className="text-5xl text-center text-blue-400 font-medium font-montserrat">
