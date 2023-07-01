@@ -3,6 +3,8 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Image from "next/image";
 import eithan from "../public/eithan.png";
 import { useState } from "react";
+import coolBackground from '../public/cool-background.svg';
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -22,9 +24,9 @@ export default function Home() {
         />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="bg-fixed px-10 md:px-20 lg:px-40" style={{ backgroundImage: `url('/cool-background.svg')`,backgroundRepeat: 'no-repeat' ,backgroundSize: 'cover'  }}>
         <section id="About_Me" className="min-h-screen">
-          <nav className="flex items-center justify-between p-4 bg-gray-900 text-white">
+          <nav className="flex items-center justify-between p-4 text-white">
             <div className="flex items-center"></div>
             <div className="flex items-center">
               <a className="text-lg px-4 hover:text-blue-400" href="#Home">
@@ -47,7 +49,7 @@ export default function Home() {
               Eithan Nakache
             </h1>
 
-            <p className="text-md py-5 leading-8 text-gray-600">
+            <p className="text-md py-5 leading-8 text-gray-900">
               Hi, I am Eithan, a 22 years old engineering student in computer
               science at EPITA. I am passionate about new technologies and I am
               always looking for new challenges.
@@ -79,12 +81,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="Projects" className="py-20">
+        <section id="Projects" className="py-5">
           <h2 className="text-5xl text-center text-blue-400 font-medium font-montserrat">
             Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <div className="flex items-center">
                 <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
                   Shell 42sh
@@ -99,30 +101,43 @@ export default function Home() {
               <p className="py-5 text-gray-500">
                 Programming of a POSIX compliant command interpreter in C
               </p>
-              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+              <a className="bg-gray-400 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
                 View
               </a>
             </div>
 
-            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
-            <div className="flex items-center">
+            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
+              <div className="flex items-center">
               <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                Portfolio
+                Chess Engine | AI
               </h3>
-              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
-              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
-            </div>
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+              </div>
               <p className="py-5 text-gray-500">
-                This portfolio website was built using Next.js and Tailwind CSS
+                Implementation of a chess engine and an AI to play against it in
+                C++
               </p>
-              <a
-                className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full"
-                href="https://github.com/eithannak29/Portefolio"
-              >
+              <a className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
                 View
               </a>
             </div>
-            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+
+            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
+              <div className="flex items-center">
+              <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
+                OCR
+              </h3>
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+              </div>
+              <p className="py-5 text-gray-500">
+                Optical character recognition project to extract sudoku grids
+                from images and solve them in C
+              </p>
+              <a className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+                View
+              </a>
+            </div>
+            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
               <div className="flex items-center">
               <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
                 Dimensions
@@ -134,29 +149,13 @@ export default function Home() {
                 Video game project in which we had to create a 3D game in Unity
               </p>
               <a
-                className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full"
+                className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full"
                 href="https://eithannakache.wixsite.com/dimensions"
               >
                 View
               </a>
             </div>
-
-            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
-              <div className="flex items-center">
-              <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                OCR
-              </h3>
-              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
-              </div>
-              <p className="py-5 text-gray-500">
-                Optical character recognition project to extract sudoku grids
-                from images and solve them in C
-              </p>
-              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
-                View
-              </a>
-            </div>
-            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
               < div className="flex items-center">
               <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
                 Malloc
@@ -166,26 +165,11 @@ export default function Home() {
               <p className="py-5 text-gray-500">
                 Implementation of the malloc, free and realloc functions in C
               </p>
-              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+              <a className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
                 View
               </a>
             </div>
-            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
-              <div className="flex items-center">
-              <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                Chess Engine | AI
-              </h3>
-              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
-              </div>
-              <p className="py-5 text-gray-500">
-                Implementation of a chess engine and an AI to play against it in
-                C++
-              </p>
-              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
-                View
-              </a>
-            </div>
-            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
               <div className="flex items-center">
               <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
                 Spider
@@ -195,11 +179,11 @@ export default function Home() {
               <p className="py-5 text-gray-500">
                 Implementation of a web server in C++, using the Boost library
               </p>
-              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+              <a className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
                 View
               </a>
             </div>
-            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
               <div className="flex items-center">
               <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
                 Tiger Compiler
@@ -209,26 +193,30 @@ export default function Home() {
               <p className="py-5 text-gray-500">
                 Implementation of a compiler for the Tiger language in C++
               </p>
-              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+              <a className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
                 View
               </a>
             </div>
           
-            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
-              <div className="flex items-center">
+            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
+            <div className="flex items-center">
               <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                JWS
+                Portfolio
               </h3>
-              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-              </div>
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+            </div>
               <p className="py-5 text-gray-500">
-                Implementation of a quarkus web server in Java
+                This portfolio website was built using Next.js and Tailwind CSS
               </p>
-              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+              <a
+                className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full"
+                href="https://github.com/eithannak29/Portefolio"
+              >
                 View
               </a>
             </div>
-            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
               <div className="flex items-center">
               <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
                 EvalExpr
@@ -238,10 +226,24 @@ export default function Home() {
               <p className="py-5 text-gray-500">
                 Implementation of a calculator in C with the shunting-yard algorithm and a stack data structure
               </p>
-              <a className="bg-gray-900 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+              <a className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
                 View
               </a>
               </div>
+            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
+              <div className="flex items-center">
+              <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
+                JWS
+              </h3>
+              <img className="object-scale-down h-8 w-16" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+              </div>
+              <p className="py-5 text-gray-500">
+                Implementation of a quarkus web server in Java
+              </p>
+              <a className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+                View
+              </a>
+            </div>
           </div>
         </section>
 
@@ -254,7 +256,7 @@ export default function Home() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-10 mt-10">
-            <div className="bg-white rounded-md p-5 shadow-md dark:bg-gray-800">
+            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md ">
               <h3 className="text-xl text-blue-400 font-medium font-montserrat border-b-4">
                 Languages
               </h3>
@@ -322,7 +324,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="bg-white rounded-md p-5 shadow-md dark:bg-gray-800">
+            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md ">
               <h3 className="text-2xl text-blue-400 font-medium font-montserrat border-b-4">
                 Tools
               </h3>
@@ -391,7 +393,7 @@ export default function Home() {
             Contact
           </h2>
           <div className="grid py-10 justify-center">
-            <div className="bg-white rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl dark:bg-gray-800">
+            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
               <a
                 href="mailto:eithannakache@gmail.com"
                 className="text-xl text-gray-500 font-medium font-montserrat block hover:text-blue-400"
