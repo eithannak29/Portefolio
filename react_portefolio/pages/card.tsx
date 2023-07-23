@@ -33,3 +33,4 @@ export default function CreateCard({ name, description, link, icons }: CardProps
     </div>
   );
 }
+
