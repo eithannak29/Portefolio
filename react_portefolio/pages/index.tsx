@@ -4,6 +4,10 @@ import Image from "next/image";
 import eithan from "../public/eithan.png";
 import { useState } from "react";
 
+import CreateCard from "./card"
+import { icons } from "react-icons";
+
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   return (
@@ -23,11 +27,14 @@ export default function Home() {
       </Head>
 
       <main
-        className="bg-fixed px-10 md:px-20 lg:px-40"
+        className="px-10 md:px-20 lg:px-40"
         style={{
           backgroundImage: `url('/cool-background.svg')`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+               
         }}
       >
         <section id="About_Me" className="min-h-screen">
@@ -53,7 +60,7 @@ export default function Home() {
               Eithan Nakache
             </h1>
 
-            <p className="text-md py-5 leading-8 text-gray-800">
+            <p className="text-md py-5 leading-8 font-montserrat font-medium ">
               Hi, I am Eithan, a 22 years old engineering student in computer
               science at EPITA. I am passionate about new technologies and I am
               always looking for new challenges.
@@ -90,229 +97,92 @@ export default function Home() {
             Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="flex items-center">
-                <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                  Shell 42sh
-                </h3>
-                <img
-                  className="object-scale-down h-8 w-16"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
-                />
-                <img
-                  className="object-scale-down h-8 w-16"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
-                />
-              </div>
+            
+            {CreateCard({
+              name: "Shell 42sh", 
+              description: "Programming of a POSIX compliant command interpreter in C",
+              link: "",
+              icons: ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"]
+            })}
 
-              <p className="py-5 text-gray-500">
-                Programming of a POSIX compliant command interpreter in C
-              </p>
-              <a className="bg-gray-400 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
-                View
-              </a>
-            </div>
 
-            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
-              <div className="flex items-center">
-                <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                  Chess Engine | AI
-                </h3>
-                <img
-                  className="object-scale-down h-8 w-16"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-                />
-              </div>
-              <p className="py-5 text-gray-500">
-                Implementation of a chess engine and an AI to play against it in
-                C++
-              </p>
-              <a className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
-                View
-              </a>
-            </div>
+            {CreateCard({
+              name : "Chess Engine | AI",
+              description: "Implementation of a chess engine and an AI to play against it in C++",
+              link: "",
+              icons: ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"]
+            })}
 
-            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
-              <div className="flex items-center">
-                <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                  OCR
-                </h3>
-                <img
-                  className="object-scale-down h-8 w-16"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
-                />
-              </div>
-              <p className="py-5 text-gray-500">
-                Optical character recognition project to extract sudoku grids
-                from images and solve them in C
-              </p>
-              <a className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
-                View
-              </a>
-            </div>
-            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
-              <div className="flex items-center">
-                <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                  Dimensions
-                </h3>
-                <img
-                  className="object-scale-down h-8 w-16"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                />
-                <img
-                  className="object-scale-down h-8 w-16"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
-                />
-              </div>
-              <p className="py-5 text-gray-500">
-                Video game project in which we had to create a 3D game in Unity
-                with C# and Blender
-              </p>
-              <a
-                className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full"
-                href="https://eithannakache.wixsite.com/dimensions"
-              >
-                View
-              </a>
-            </div>
-            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
-              <div className="flex items-center">
-                <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                  Malloc
-                </h3>
-                <img
-                  className="object-scale-down h-8 w-16"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
-                />
-              </div>
-              <p className="py-5 text-gray-500">
-                Implementation of the malloc, free and realloc functions in C to
-                manage the memory of a program
-              </p>
-              <a className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
-                View
-              </a>
-            </div>
-            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
-              <div className="flex items-center">
-                <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                  Spider
-                </h3>
-                <img
-                  className="object-scale-down h-8 w-16"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-                />
-              </div>
-              <p className="py-5 text-gray-500">
-                Implementation of a web server in C++, using the Boost library
-                compliant with the HTTP/1.1 protocol
-              </p>
-              <a className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
-                View
-              </a>
-            </div>
-            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
-              <div className="flex items-center">
-                <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                  Tiger Compiler
-                </h3>
-                <img
-                  className="object-scale-down h-8 w-16"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-                />
-              </div>
-              <p className="py-5 text-gray-500">
-                Implementation of a compiler for the Tiger language in C++
-              </p>
-              <a className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
-                View
-              </a>
-            </div>
+            {CreateCard({
+              name: "OCR",
+              description: "Optical character recognition project to extract sudoku grids from images and solve them in C",
+              link: "",
+              icons: ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"]
+            })}
 
-            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
-              <div className="flex items-center">
-                <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                  Portfolio
-                </h3>
-                <img
-                  className="object-scale-down h-8 w-16"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
-                />
-                <img
-                  className="object-scale-down h-8 w-16"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                />
-              </div>
-              <p className="py-5 text-gray-500">
-                This portfolio website was built using Next.js and Tailwind CSS
-                and is hosted on Vercel
-              </p>
-              <a
-                className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full"
-                href="https://github.com/eithannak29/Portefolio"
-              >
-                View
-              </a>
-            </div>
-            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
-              <div className="flex items-center">
-                <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                  EvalExpr
-                </h3>
-                <img
-                  className="object-scale-down h-8 w-16"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
-                />
-              </div>
-              <p className="py-5 text-gray-500">
-                Implementation of a calculator in C with the shunting-yard
-                algorithm and a stack data structure
-              </p>
-              <a className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
-                View
-              </a>
-            </div>
-            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
-              <div className="flex items-center">
-                <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                  JWS
-                </h3>
-                <img
-                  className="object-scale-down h-8 w-16"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                />
-              </div>
-              <p className="py-5 text-gray-500">
-                Implementation of a quarkus web server in Java, using the JPA
-                and Hibernate libraries to communicate with a PostgreSQL
-                database
-              </p>
-              <a className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
-                View
-              </a>
-            </div>
-            <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-xl ">
-              <div className="flex items-center">
-                <h3 className="text-2xl text-blue-400 font-medium font-montserrat">
-                  e/place
-                </h3>
-                <img
-                  className="object-scale-down h-8 w-16"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                />
-              </div>
-              <p className="py-5 text-gray-500">
-                Implementation of a client-side web application in JavaScript in
-                order to draw on a canvas with other users in real time using
-                websockets
-              </p>
-              <a
-                className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full"
-                href="https://epitafr-my.sharepoint.com/personal/gabriel_huet-de-froberville_epita_fr/_layouts/15/stream.aspx?id=%2Fpersonal%2Fgabriel%5Fhuet%2Dde%2Dfroberville%5Fepita%5Ffr%2FDocuments%2FEpita%2FAssistants%2FEPLACE%2FEPLACE%20Timelapse%2Emp4&ga=1 "
-              >
-                View
-              </a>
-            </div>
+            {CreateCard({
+              name: "Dimension",
+              description: "Video game project in which we had to create a 3D game in Unity with C# and Blender",
+              link: "https://eithannakache.wixsite.com/dimensions",
+              icons: ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"]
+            })}
+
+            {CreateCard({
+              name: "MyMalloc",
+              description: "Implementation of the malloc, free and realloc functions in C to manage the memory of a program",
+              link: "",
+              icons: ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"]
+            })}
+
+            {CreateCard({
+              name: "Spider",
+              description: "Implementation of a web server in C++, using the Boost library compliant with the HTTP/1.1 protocol",
+              link: "",
+              icons: ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"]
+            })}
+            
+            {CreateCard({
+              name: "Tiger Compiler",
+              description: "Implementation of a compiler for the Tiger language in C++",
+              link: "",
+              icons: ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"]
+            })}
+  
+
+            {CreateCard({
+              name: "Portfolio",
+              description: "This portfolio website was built using Next.js and Tailwind CSS and is hosted on Vercel",
+              link: "",
+              icons: ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"]
+            })}
+
+            {CreateCard({
+              name: "EvalExpr",
+              description: "Implementation of a calculator in C with the shunting-yard algorithm and a stack data structure",
+              link: "",
+              icons: ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"]
+            })}
+
+            {CreateCard({
+              name: "JWS",
+              description: "Implementation of a quarkus web server in Java, using the JPA and Hibernate libraries to communicate with a PostgreSQL database",
+              link: "",
+              icons: ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"]
+            })}
+
+            {CreateCard({
+              name: "e/place",
+              description: "Implementation of a client-side web application in JavaScript in order to draw on a canvas with other users in real time using websockets",
+              link: "https://epitafr-my.sharepoint.com/personal/gabriel_huet-de-froberville_epita_fr/_layouts/15/stream.aspx?id=%2Fpersonal%2Fgabriel%5Fhuet%2Dde%2Dfroberville%5Fepita%5Ffr%2FDocuments%2FEpita%2FAssistants%2FEPLACE%2FEPLACE%20Timelapse%2Emp4&ga=1",
+              icons: ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"]
+            })}
+
+            {CreateCard({
+              name: "PING",
+              description: "Implementation of an IDE for Spider students using Electron and React",
+              link: "",
+              icons: ["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg"]
+            })}
           </div>
         </section>
 
