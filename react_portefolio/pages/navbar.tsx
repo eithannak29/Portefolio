@@ -9,7 +9,7 @@ interface ColorProp {
 
 
 export default function NavBar({ color }: ColorProp) {
-  if (color == "blue") {
+  if (color === "blue") {
     return (
       <section id="About_Me" className="min-h-screen">
         <nav className="flex items-center justify-between p-4 text-white">
