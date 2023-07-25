@@ -6,10 +6,17 @@ import NavBar from "./navbar";
 import Contact from "./contact";
 
 
+const colors = ["blue","red"];
+
+function getRandomColor() {
+  const randomIndex = Math.floor(Math.random() * colors.length);
+  return colors[randomIndex];
+}
+
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [color, setColor] = useState(getRandomColor());
   return (
-    <div className={darkMode ? "" : "dark"}>
+    <div>
       <Head>
         <title>Eithan Nakache</title>
         <meta name="Eithan Nakache Portfolio " content="" />
@@ -27,7 +34,7 @@ export default function Home() {
       <main
         className="px-10 md:px-20 lg:px-40"
         style={{
-          backgroundImage: `url('/cool-background.svg')`,
+          backgroundImage: `url('/background/cool-background_` + color + `.svg')`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -35,10 +42,10 @@ export default function Home() {
                
         }}
       >
-        <NavBar />
-        <Projects />
-        <Skills /> 
-        <Contact />
+        <NavBar color={color} />
+        <Projects color={color} />
+        <Skills color={color} />
+        <Contact color={color} />
       </main>
     </div>
   );
