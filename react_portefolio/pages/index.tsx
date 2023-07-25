@@ -58,7 +58,7 @@ export default function Home() {
         <NavBar color={color} />
       </div>
 
-=      <div className="animate-fade-in-down  hidden">
+      <div className="animate-fade-in-down  hidden">
         <Projects color={color} />
       </div>
 
