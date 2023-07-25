@@ -22,6 +22,7 @@ function CreateSticker({ link }: StickerProps) {
 
 export default function Skills({ color }: ColorProp) {
   return (
+    <div className="hidden">
     <section className="py-10">
       <h2
         id="Skills"
@@ -72,5 +73,6 @@ export default function Skills({ color }: ColorProp) {
         </div>
       </div>
     </section>
+    </div>
   );
 }

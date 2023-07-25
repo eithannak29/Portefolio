@@ -6,6 +6,7 @@ interface ColorProp {
 
 export default function Contact({ color }: ColorProp) {
     return (
+      <div className="hidden">
         <section id="Contact" className="py-20">
         <h2 className={`text-5xl text-center text-${color}-400 font-medium font-montserrat`}>
           Contact
@@ -21,5 +22,6 @@ export default function Contact({ color }: ColorProp) {
           </div>
         </div>
       </section>
+      </div>
     );
 }

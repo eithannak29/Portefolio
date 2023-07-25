@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Projects from "./projects";
 import Skills from "./skills";
 import NavBar from "./navbar";
@@ -15,6 +15,16 @@ function getRandomColor() {
 
 export default function Home() {
   const [color, setColor] = useState(getRandomColor());
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const elementsToShow = document.querySelectorAll('.hidden');
+      elementsToShow.forEach((element) => element.classList.remove('hidden'));
+    });
+    return () => clearTimeout(timer);
+  }, []);
+
+
   return (
     <div>
       <Head>
@@ -42,10 +52,24 @@ export default function Home() {
                
         }}
       >
+
+<div>
+      <div className="animate-fade-in-down  hidden">
         <NavBar color={color} />
+      </div>
+
+=      <div className="animate-fade-in-down  hidden">
         <Projects color={color} />
+      </div>
+
+=      <div className="animate-fade-in-down  hidden">
         <Skills color={color} />
+      </div>
+
+=      <div className="animate-fade-in-down  hidden">
         <Contact color={color} />
+      </div>
+    </div>
       </main>
     </div>
   );

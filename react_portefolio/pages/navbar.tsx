@@ -11,6 +11,7 @@ interface ColorProp {
 export default function NavBar({ color }: ColorProp) {
   if (color === "blue") {
     return (
+        <div className="hidden">
       <section id="About_Me" className="min-h-screen">
         <nav className="flex items-center justify-between p-4 text-white">
           <div className="flex items-center ml-auto bg-gray-800 bg-opacity-50 rounded-md ">
@@ -65,11 +66,13 @@ export default function NavBar({ color }: ColorProp) {
           />
         </div>
       </section>
+        </div>
     );
   }
   else
   {
     return (
+        <div className="hidden">
         <section id="About_Me" className="min-h-screen">
         <nav className="flex items-center justify-between p-4 text-white">
             <div className="flex items-center ml-auto bg-gray-800 bg-opacity-50 rounded-md ">
@@ -124,6 +127,7 @@ export default function NavBar({ color }: ColorProp) {
           />
         </div>
       </section>
+        </div>
     );
   }
 }

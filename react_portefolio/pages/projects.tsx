@@ -44,6 +44,7 @@ function Project({ name, description, link, icons }: ProjectProps, { color }: Co
 
 export default function Projects({ color }: ColorProp) {
   return (
+    <div className="hidden">
     <section id="Projects" className="py-5">
           <h2 className={`text-5xl text-${color}-400 font-medium font-montserrat text-center`}>
             Projects
@@ -137,5 +138,6 @@ export default function Projects({ color }: ColorProp) {
             }, { color })}
           </div>
         </section>
+        </div>
   )
 }
