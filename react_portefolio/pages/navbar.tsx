@@ -67,7 +67,7 @@ export default function NavBar({ color }: ColorProp) {
       </section>
     );
   }
-  else if (color === "red")
+  else
   {
     return (
         <section id="About_Me" className="min-h-screen">
