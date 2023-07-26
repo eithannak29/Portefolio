@@ -5,16 +5,7 @@ import Skills from "./skills";
 import NavBar from "./navbar";
 import Contact from "./contact";
 
-const colors = ["blue", "red"];
-
-function getRandomColor() {
-  const randomIndex = Math.floor(Math.random() * colors.length);
-  return colors[randomIndex];
-}
-
 export default function Home() {
-  const [color, setColor] = useState(getRandomColor());
-
   useEffect(() => {
     const timer = setTimeout(() => {
       const elementsToShow = document.querySelectorAll(".hidden");
@@ -43,7 +34,7 @@ export default function Home() {
         className="px-10 md:px-20 lg:px-40"
         style={{
           backgroundImage:
-            `url('/background/cool-background_` + color + `.svg')`,
+            `url('/background/cool-background_blue.svg')`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -52,19 +43,19 @@ export default function Home() {
       >
         <div>
           <div className="animate-fade-in-down  hidden">
-            <NavBar color={color} />
+            <NavBar/>
           </div>
 
           <div className="animate-fade-in-down  hidden">
-            <Projects color={color} />
+            <Projects/>
           </div>
 
           <div className="animate-fade-in-down  hidden">
-            <Skills color={color} />
+            <Skills/>
           </div>
 
           <div className="animate-fade-in-down  hidden">
-            <Contact color={color} />
+            <Contact/>
           </div>
         </div>
       </main>

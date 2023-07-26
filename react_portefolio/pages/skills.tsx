@@ -4,11 +4,6 @@ interface StickerProps {
   link: string;
 }
 
-interface ColorProp {
-  color: string;
-}
-
-
 function CreateSticker({ link }: StickerProps) {
   return (
     <li className="py-3">
@@ -20,19 +15,19 @@ function CreateSticker({ link }: StickerProps) {
   );
 }
 
-export default function Skills({ color }: ColorProp) {
+export default function Skills() {
   return (
     <div className="hidden">
     <section className="py-10">
       <h2
         id="Skills"
-        className={`text-5xl text-center text-${color}-400 font-medium font-montserrat`}
+        className={`text-5xl text-center text-blue-400 font-medium font-montserrat`}
       >
         Skills
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-10 mt-10">
         <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md ">
-          <h3 className={`text-xl text-${color}-400 font-medium font-montserrat border-b-4`}>
+          <h3 className={`text-xl text-blue-400 font-medium font-montserrat border-b-4`}>
             Languages
           </h3>
           <ul className="py-5 flex flex-wrap justify-center">
@@ -50,7 +45,7 @@ export default function Skills({ color }: ColorProp) {
           </ul>
         </div>
         <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md ">
-        <h3 className={`text-xl text-${color}-400 font-medium font-montserrat border-b-4`}>
+        <h3 className={`text-xl text-blue-400 font-medium font-montserrat border-b-4`}>
             Tools
           </h3>
 
