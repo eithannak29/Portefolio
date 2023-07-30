@@ -34,7 +34,7 @@ export default function Skills() {
         easing: "ease-out",
         origin: "right",
         scale: 1,
-        mobile: true,
+        // mobile: true,
       });
 
       sr.reveal(Tools, {
@@ -43,7 +43,7 @@ export default function Skills() {
         easing: "ease-out",
         origin: "left",
         scale: 1,
-        mobile: true,
+        // mobile: true,
       });
 
     }
