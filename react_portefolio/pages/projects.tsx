@@ -143,7 +143,7 @@ export default function Projects() {
               name: "Portfolio",
               description:
                 "This portfolio website was built using Next.js and Tailwind CSS and is hosted on Vercel",
-              link: "",
+              link: "https://github.com/eithannak29/Portefolio",
               icons: [
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg",
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
