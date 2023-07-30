@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import Image from "next/image";
 
 interface ProjectProps {
   name: string;
@@ -7,7 +8,7 @@ interface ProjectProps {
   icons: string[];
 }
 
-const Project = React.forwardRef<HTMLDivElement, ProjectProps>(
+const Project = (
   ({ name, description, link, icons }: ProjectProps) => {
     return (
       <div
@@ -21,7 +22,7 @@ const Project = React.forwardRef<HTMLDivElement, ProjectProps>(
           {icons && icons.length > 0 && (
             <div className="flex">
               {icons.map((icon, index) => (
-                <img
+                <Image
                   key={index}
                   className="object-scale-down h-8 w-16"
                   src={icon}

@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
+import Image from "next/image";
 
 interface StickerProps {
   link: string;
@@ -8,9 +9,10 @@ interface StickerProps {
 function CreateSticker({ link }: StickerProps) {
   return (
     <li className="py-3">
-      <img
+      <Image
         className="object-scale-down h-24 w-48 transform transition-all duration-300 hover:scale-105 hover:shadow-l"
         src={link}
+        alt=""
       />
     </li>
   );
