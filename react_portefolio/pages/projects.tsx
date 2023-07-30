@@ -13,7 +13,7 @@ const Project = (
     return (
       <div
         id="projectItem"
-        className="bg-white bg-opacity-50 rounded-md p-5 shadow-lg shadow-blue-500/50 transform transition-all duration-300 hover:scale-105  hover:shadow-indigo-500/40 hover:shadow-xl project-item"
+        className="bg-white bg-opacity-50 rounded-md p-5 shadow-md shadow-blue-500/50 transform transition-all duration-300 hover:scale-105  hover:shadow-indigo-500/40 hover:shadow-2xl project-item"
       >
         <div className="flex items-center">
           <h3 className={`text-2xl text-blue-400 font-medium font-montserrat`}>
@@ -22,7 +22,7 @@ const Project = (
           {icons && icons.length > 0 && (
             <div className="flex">
               {icons.map((icon, index) => (
-                <Image
+                <img
                   key={index}
                   className="object-scale-down h-8 w-16"
                   src={icon}

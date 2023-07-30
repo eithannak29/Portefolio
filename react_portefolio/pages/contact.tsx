@@ -28,7 +28,7 @@ export default function Contact() {
           Contact
         </h2>
         <div className="grid py-10 justify-center">
-          <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-lg shadow-blue-500/50 transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50">
+          <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md shadow-blue-500/50 transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50">
             <a
               href="mailto:eithannakache@gmail.com"
               className={`text-xl text-gray-500 font-medium font-montserrat block hover:text-blue-400`}

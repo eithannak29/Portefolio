@@ -40,7 +40,7 @@ export default function Home() {
       </Head>
 
       <main
-        className="px-10 md:px-20 lg:px-40"
+        className="px-10 md:px-20"
         style={{
           backgroundImage:
             `url('/background/cool-background_blue.svg')`,
