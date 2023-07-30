@@ -32,7 +32,7 @@ export default function Skills() {
         duration: 1000,
         distance: "30px",
         easing: "ease-out",
-        origin: "left",
+        origin: "right",
         scale: 1,
         mobile: true,
       });
@@ -41,7 +41,7 @@ export default function Skills() {
         duration: 1000,
         distance: "30px",
         easing: "ease-out",
-        origin: "right",
+        origin: "left",
         scale: 1,
         mobile: true,
       });
