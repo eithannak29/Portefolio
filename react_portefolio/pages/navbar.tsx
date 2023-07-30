@@ -27,7 +27,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className="hidden">
+    <div className="">
       <section id="About_Me" className="min-h-screen">
         <nav className="flex items-center justify-between p-4 text-white">
           <div className="flex items-center ml-auto bg-gray-800 bg-opacity-50 rounded-md ">

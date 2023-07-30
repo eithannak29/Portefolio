@@ -7,13 +7,22 @@ import Contact from "./contact";
 
 export default function Home() {
   useEffect(() => {
-    const timer = setTimeout(() => {
-      const elementsToShow = document.querySelectorAll(".hidden");
-      elementsToShow.forEach((element) => element.classList.remove("hidden"));
-    });
-    return () => clearTimeout(timer);
-  }, []);
+    if (typeof window !== "undefined") {
+      const ScrollReveal = require("scrollreveal").default;
+      const sr = ScrollReveal();
 
+      const elementsToAnimate = document.querySelectorAll('.navbar');
+
+      sr.reveal(elementsToAnimate, {
+        duration: 1000,
+        distance: '30px',
+        easing: 'ease-out',
+        origin: 'bottom',
+        scale: 1,
+        mobile: true,
+      });
+    }
+  }, []);
   return (
     <div>
       <Head>
@@ -42,19 +51,19 @@ export default function Home() {
         }}
       >
         <div>
-          <div className="animate-fade-in-down  hidden">
+          <div className="navbar">
             <NavBar/>
           </div>
 
-          <div className="animate-fade-in-down  hidden">
+          <div className="projects">
             <Projects/>
           </div>
 
-          <div className="animate-fade-in-down  hidden">
+          <div className="">
             <Skills/>
           </div>
 
-          <div className="animate-fade-in-down  hidden">
+          <div className="">
             <Contact/>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 
 interface StickerProps {
   link: string;
@@ -16,8 +17,40 @@ function CreateSticker({ link }: StickerProps) {
 }
 
 export default function Skills() {
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const ScrollReveal = require("scrollreveal").default;
+      const sr = ScrollReveal();
+
+      const Languages = document.querySelectorAll("#Languages");
+      const Tools = document.querySelectorAll("#Tools");
+
+      sr.reveal(Languages, {
+        duration: 1000,
+        distance: "30px",
+        easing: "ease-out",
+        origin: "left",
+        scale: 1,
+        mobile: true,
+      });
+
+      sr.reveal(Tools, {
+        duration: 1000,
+        distance: "30px",
+        easing: "ease-out",
+        origin: "right",
+        scale: 1,
+        mobile: true,
+      });
+
+    }
+  }, []);
+
+
+
   return (
-    <div className="hidden">
+    <div className="">
     <section className="py-10">
       <h2
         id="Skills"
@@ -26,7 +59,7 @@ export default function Skills() {
         Skills
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-10 mt-10">
-        <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md ">
+        <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-lg shadow-blue-500/50 " id="Languages">
           <h3 className={`text-xl text-blue-400 font-medium font-montserrat border-b-4`}>
             Languages
           </h3>
@@ -44,7 +77,7 @@ export default function Skills() {
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ocaml/ocaml-original.svg" />
           </ul>
         </div>
-        <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md ">
+        <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-lg shadow-blue-500/50 " id="Tools">
         <h3 className={`text-xl text-blue-400 font-medium font-montserrat border-b-4`}>
             Tools
           </h3>
