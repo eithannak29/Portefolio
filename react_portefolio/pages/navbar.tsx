@@ -64,7 +64,7 @@ export default function NavBar() {
           </h1>
 
           <p className="text-md py-5 leading-8 font-montserrat font-medium ">
-            Hi, I am Eithan, a 22 years old engineering student in computer
+            Hi, I am Eithan, a 23 years old engineering student in computer
             science at EPITA. I am passionate about new technologies and I am
             always looking for new challenges.
           </p>
@@ -84,6 +84,7 @@ export default function NavBar() {
             {" "}
             <AiFillGithub />{" "}
           </a>
+          
         </div>
         <div className="relative mx-auto bg-gradient-to-b from-blue-400 rounded-full w-80 h-80 mt-20 overflow-hidden">
           <Image

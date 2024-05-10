@@ -74,6 +74,45 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
           {[
             {
+              name: "Chat Content Moderation",
+              description:
+                "Implementation of a content moderation system for a chat using different machine learning models on Jigsaw dataset",
+              link: "",
+              icons: [
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
+                ],
+            },
+            {
+              name: "French Army Hackathon | 6milarity Challenge",
+              description:
+                "Winner of computer vision challenge organize by the French Army. Implementation of a model to detect similar images in a dataset",
+              link: "https://github.com/chuklee/Hackatons-IADataHack",
+              icons: [
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
+              ],
+            },
+            {
+              name: "KNN4Diabetes",
+              description:
+                "Implementation of a K-Nearest Neighbors algorithm to predict diabetes in patients",
+              link: "",
+              icons: [
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
+              ],
+            },
+            {
+              name: "GDSC EPITA | Minecraft Biomes Classification",
+              description:
+                "Implementation of a machine learning model to classify Minecraft biomes using TensorFlow and Keras",
+              link: "",
+              icons: [
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg",
+              ],
+            },
+            {
               name: "PING",
               description:
                 "Implementation of an IDE for Spider students using Electron and React",
@@ -146,7 +185,7 @@ export default function Projects() {
               link: "https://github.com/eithannak29/Portefolio",
               icons: [
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg",
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
               ],
             },
             {
