@@ -66,17 +66,14 @@ export default function Skills() {
             Languages
           </h3>
           <ul className="py-5 flex flex-wrap justify-center">
+            <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+            <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />
-            <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-            <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-            <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-            <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-            <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ocaml/ocaml-original.svg" />
           </ul>
         </div>
         <div className="bg-white bg-opacity-50 rounded-md p-5 shadow-md shadow-blue-500/50 " id="Tools">
@@ -90,18 +87,14 @@ export default function Skills() {
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" />
-            <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scala/scala-original.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+            <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" />
             <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-            <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" />
-            <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" />
-            <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
-            <CreateSticker link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />
           </ul>
         </div>
       </div>

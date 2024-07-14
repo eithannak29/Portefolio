@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import { PERMANENT_REDIRECT_STATUS } from "next/dist/shared/lib/constants";
 
 interface ProjectProps {
   name: string;
@@ -11,34 +12,27 @@ interface ProjectProps {
 const Project = (
   ({ name, description, link, icons }: ProjectProps) => {
     return (
-      <div
-        id="projectItem"
-        className="bg-white bg-opacity-50 rounded-md p-5 shadow-md shadow-blue-500/50 transform transition-all duration-300 hover:scale-105  hover:shadow-indigo-500/40 hover:shadow-2xl project-item"
-      >
+      <div id="projectItem" className="bg-white bg-opacity-50 rounded-md p-5 shadow-md shadow-blue-500/50 transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-500/40 hover:shadow-2xl project-item">
         <div className="flex items-center">
-          <h3 className={`text-2xl text-blue-400 font-medium font-montserrat`}>
+          <h4 className="text-xl text-blue-400 font-medium font-montserrat">
             {name}
-          </h3>
+          </h4>
           {icons && icons.length > 0 && (
             <div className="flex">
               {icons.map((icon, index) => (
-                <img
-                  key={index}
-                  className="object-scale-down h-8 w-16"
-                  src={icon}
-                  alt={`Icon ${index + 1}`}
-                />
+                <img key={index} className="object-scale-down h-8 w-16" src={icon} alt={`Icon ${index + 1}`} />
               ))}
             </div>
           )}
         </div>
         <p className="py-5 text-gray-500">{description}</p>
-        <a
-          href={link}
-          className={`bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full`}
-        >
-          View
-        </a>
+        {link === "" ? (
+          <span className="text-gray-500 italic">School Project - No link</span>
+        ) : (
+          <a href={link} className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full">
+            View
+          </a>
+        )}
       </div>
     );
   }
@@ -74,10 +68,29 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
           {[
             {
-              name: "Chat Content Moderation",
+              name: "POKE GAN",
+              description: "Implementation of a Generative Adversarial Network to generate new Pokemon sprites",
+              link: "https://www.kaggle.com/code/eithannakache/gan-pokemon",
+              icons: [
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
+              ],
+            },
+          {
+            name: "Cinema4Two",
+            description:
+              "A platform to find the perfect movie to watch with a friend or partner based on your mutual preferences.",
+            link: "https://github.com/eithannak29/Cinema4Two",
+            icons: [
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
+              "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+            ],
+          },
+            {
+              name: "Chat Bot Content Moderation",
               description:
                 "Implementation of a content moderation system for a chat using different machine learning models on Jigsaw dataset",
-              link: "",
+              link: "https://github.com/eithannak29/ToxicityBot",
               icons: [
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
@@ -97,7 +110,7 @@ export default function Projects() {
               name: "KNN4Diabetes",
               description:
                 "Implementation of a K-Nearest Neighbors algorithm to predict diabetes in patients",
-              link: "",
+              link: "https://www.kaggle.com/code/eithannakache/knn4diabetes",
               icons: [
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg",
               ],
@@ -106,21 +119,10 @@ export default function Projects() {
               name: "GDSC EPITA | Minecraft Biomes Classification",
               description:
                 "Implementation of a machine learning model to classify Minecraft biomes using TensorFlow and Keras",
-              link: "",
+              link: "https://www.kaggle.com/code/eithannakache/gdsc-minecraft-biome-classification",
               icons: [
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg",
-              ],
-            },
-            {
-              name: "PING",
-              description:
-                "Implementation of an IDE for Spider students using Electron and React",
-              link: "",
-              icons: [
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg",
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
               ],
             },
             {
@@ -130,42 +132,6 @@ export default function Projects() {
               link: "",
               icons: [
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-              ],
-            },
-            {
-              name: "Spider",
-              description:
-                "Implementation of a web server in C++, using the Boost library compliant with the HTTP/1.1 protocol",
-              link: "",
-              icons: [
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-              ],
-            },
-            {
-              name: "e/place",
-              description:
-                "Implementation of a client-side web application in JavaScript in order to draw on a canvas with other users in real time using websockets",
-              link: "https://epitafr-my.sharepoint.com/personal/gabriel_huet-de-froberville_epita_fr/_layouts/15/stream.aspx?id=%2Fpersonal%2Fgabriel%5Fhuet%2Dde%2Dfroberville%5Fepita%5Ffr%2FDocuments%2FEpita%2FAssistants%2FEPLACE%2FEPLACE%20Timelapse%2Emp4&ga=1",
-              icons: [
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-              ],
-            },
-            {
-              name: "Tiger Compiler",
-              description:
-                "Implementation of a compiler for the Tiger language in C++",
-              link: "",
-              icons: [
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-              ],
-            },
-            {
-              name: "JWS",
-              description:
-                "Implementation of a quarkus web server in Java, using the JPA and Hibernate libraries to communicate with a PostgreSQL database",
-              link: "",
-              icons: [
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
               ],
             },
             {
@@ -186,24 +152,6 @@ export default function Projects() {
               icons: [
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg",
                 "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-              ],
-            },
-            {
-              name: "MyMalloc",
-              description:
-                "Implementation of the malloc, free and realloc functions in C to manage the memory of a program",
-              link: "",
-              icons: [
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
-              ],
-            },
-            {
-              name: "EvalExpr",
-              description:
-                "Implementation of a calculator in C with the shunting-yard algorithm and a stack data structure",
-              link: "",
-              icons: [
-                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
               ],
             },
             {
