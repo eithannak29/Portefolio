@@ -86,6 +86,15 @@ export default function Projects() {
               "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
             ],
           },
+          {
+            name: "CNN Boat Classifaction",
+            description:
+              "Implemented data augmentation and developed scratch and fine-tuned EfficientNetB0 models.",
+            link: "https://www.kaggle.com/code/camzia/les-jacks-spatial-navires-24-fait-main",
+            icons: [
+                   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg",
+            ],
+          },
             {
               name: "Chat Bot Content Moderation",
               description:
