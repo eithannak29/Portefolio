@@ -76,6 +76,15 @@ export default function Projects() {
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
               ],
             },
+            {
+              name: "HACKATON - Mistral AI Model Dilution (Top 3)",
+              description:
+                "Developed a platform to convert large pre-trained models into efficient, task-specific smaller models. Used prompt engineering for dataset creation and direct optimization techniques for finetuning.",
+              link: "https://github.com/chuklee/HACKATHON_MISTRAL",
+              icons: [
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
+              ],
+            },
           {
             name: "Cinema4Two",
             description:
