@@ -68,6 +68,15 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
           {[
             {
+              name: "ZAuth: Secure Face Recognition with FHE",
+              description:
+                "A secure authentication system that utilizes Fully Homomorphic Encryption (FHE) and face recognition to ensure user data privacy and security.",
+              link: "",
+              icons: [
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
+              ],
+            },
+            {
               name: "POKE GAN",
               description: "Implementation of a Generative Adversarial Network to generate new Pokemon sprites",
               link: "https://www.kaggle.com/code/eithannakache/gan-pokemon",
