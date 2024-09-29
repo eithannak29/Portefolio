@@ -71,7 +71,7 @@ export default function Projects() {
               name: "ZAuth: Secure Face Recognition with FHE",
               description:
                 "A secure authentication system that utilizes Fully Homomorphic Encryption (FHE) and face recognition to ensure user data privacy and security.",
-              link: "",
+              link: "https://github.com/chuklee/ppai_team4",
               icons: [
                 "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
               ],
