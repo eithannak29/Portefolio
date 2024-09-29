@@ -63,11 +63,11 @@ export default function NavBar() {
             Eithan Nakache
           </h1>
 
-          <p className="text-md py-5 leading-8 font-montserrat font-medium ">
-            Hi, I am Eithan, a 23 years old engineering student in computer
-            science at EPITA. I am passionate about new technologies and I am
-            always looking for new challenges.
-          </p>
+          <p className="text-md py-5 leading-8 font-montserrat font-medium text-red-400">
+  Hi, I am Eithan, a 23-year-old engineering student in computer
+  science at EPITA. I am passionate about new technologies and I am
+  always looking for new challenges 🤗
+</p>
         </div>
         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-500">
           <a
