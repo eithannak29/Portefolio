@@ -63,7 +63,7 @@ export default function NavBar() {
             Eithan Nakache
           </h1>
 
-          <p className="text-md py-5 leading-8 font-montserrat font-medium text-red-400">
+          <p className="text-md py-5 leading-8 font-montserrat font-medium text-blue-100" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>
   Hi, I am Eithan, a 23-year-old engineering student in computer
   science at EPITA. I am passionate about new technologies and I am
   always looking for new challenges 🤗

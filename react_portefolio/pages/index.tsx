@@ -43,7 +43,7 @@ export default function Home() {
         className="px-10 md:px-20"
         style={{
           backgroundImage:
-            `url('/background/cool-background_blue.svg')`,
+            `url('/background/v960-ning-32.jpg')`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
