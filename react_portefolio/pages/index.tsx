@@ -39,16 +39,16 @@ export default function Home() {
         />
       </Head>
 
-      <main
-        className="px-10 md:px-20"
-        style={{
-          backgroundImage:
-            `url('/background/v960-ning-32.jpg')`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-        }}
+      <main 
+        className="px-10 md:px-20 gradient"
+        // style={{
+        //   backgroundImage:
+        //     `url('/background/v960-ning-32.jpg')`,
+        //   backgroundRepeat: "no-repeat",
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        //   backgroundAttachment: "fixed",
+        // }}
       >
         <div>
           <div className="navbar">
@@ -59,9 +59,9 @@ export default function Home() {
             <Projects/>
           </div>
 
-          <div className="">
+          {/* <div className="">
             <Skills/>
-          </div>
+          </div> */}
 
           <div className="">
             <Contact/>

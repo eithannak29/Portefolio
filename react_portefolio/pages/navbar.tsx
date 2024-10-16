@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Image from "next/image";
-import eithan from "../public/eithan.png";
+import eithan from "../public/surfer.png";
 import { useEffect, useState } from "react";
 
 import SplitType from "split-type";
@@ -86,14 +86,15 @@ export default function NavBar() {
           </a>
           
         </div>
-        <div className="relative mx-auto bg-gradient-to-b from-blue-400 rounded-full w-80 h-80 mt-20 overflow-hidden">
-          <Image
-            alt="Picture of the author"
-            src={eithan}
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
+        <div className="relative mx-auto w-80 h-80 mt-20">
+  <div className="absolute inset-0 w-full h-full rounded-full bg-blue-800 blur-2xl opacity-70 animate-pulse"></div>
+  <Image
+    alt="Picture of the author"
+    src={eithan}
+    className="rounded-full relative w-full h-full object-cover"
+  />
+</div>
+
       </section>
     </div>
   );

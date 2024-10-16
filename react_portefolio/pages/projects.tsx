@@ -12,10 +12,10 @@ const Project = ({ name, description, link, icons }: ProjectProps) => {
   return (
     <div
       id="projectItem"
-      className="bg-white bg-opacity-50 rounded-md p-5 shadow-md shadow-blue-500/50 transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-500/40 hover:shadow-2xl project-item flex flex-col h-full overflow-hidden"
+      className="bg-gray-800 bg-opacity-90 rounded-md p-5 shadow-md shadow-black/50 transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-600/40 hover:shadow-2xl project-item flex flex-col h-full overflow-hidden"
     >
       <div className="flex items-center justify-between">
-        <h4 className="text-xl text-blue-400 font-medium font-montserrat">
+        <h4 className="text-xl text-white font-medium font-montserrat">
           {name}
         </h4>
         {icons && icons.length > 0 && (
@@ -32,16 +32,16 @@ const Project = ({ name, description, link, icons }: ProjectProps) => {
         )}
       </div>
       <div className="flex-grow">
-        <p className="py-5 text-gray-500">{description}</p>
+        <p className="py-5 text-gray-300">{description}</p>
       </div>
       {link === "" ? (
-        <span className="text-gray-500 italic self-end">
+        <span className="text-gray-400 italic self-end">
           School Project - No link
         </span>
       ) : (
         <a
           href={link}
-          className="bg-gray-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-full self-end"
+          className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-full self-end"
         >
           View
         </a>
@@ -79,6 +79,16 @@ export default function Projects() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
           {[
+            {
+              name: "Echo 🧠",
+              description: "A shared platform for families to support loved ones with Alzheimer's by creating a collective memory album. Features an AI chatbot using RAG and personalized memory quizzes.",
+              link: "https://github.com/eithannak29/echo",
+              icons: [
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+                "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+              ],
+            },
+
             {
               name: "ZAuth: Secure Face Recognition with FHE",
               description:
