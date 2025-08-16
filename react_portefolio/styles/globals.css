@@ -5,9 +5,10 @@
 
 html,
 body {
-  background: #eff0f0;
   padding: 0;
   margin: 0;
+  background: #ffffff;
+  color: #111827;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -27,21 +28,3 @@ a {
   box-sizing: border-box;
 }
 
-.gradient {
-
-	background: linear-gradient(334deg, #0D4470, #010331,#000);
-	background-size: 180% 180%;
-	animation: gradient-animation 6s ease infinite;
-}
-
-@keyframes gradient-animation {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
