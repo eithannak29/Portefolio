@@ -1,92 +1,86 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
+  name: "Eithan Nakache",
+  title: "AI Research Intern - Siemens Healthineers",
+  description:
+    "Passionate about deep learning and always excited to learn, build and explore new ideas in AI.",
   accentColor: "#1d4ed8",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "eithannakache@gmail.com",
+    linkedin: "https://www.linkedin.com/in/eithannakache/",
+    github: "https://github.com/eithannak29",
+    // twitter: "",
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "AI enthusiast and research intern passionate about building smarter and more reliable AI systems. I enjoy working with language models, turning complex ideas into real-world solutions. Curious, hands-on and always learning.",
+  skills: [],
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "NanoDiffVision - Vision Transformers with Differential Attention",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Compact ViT with differential attention; up to 96.03% on MNIST and 86.73% on FashionMNIST.",
+      link: "https://www.eithannakache.com/",
+      skills: ["Personal Project", "PyTorch", "Vision Transformers"]
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "ZAuth - Privacy-Preserving Authentication (PPAI Hackathon 2024)",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "PPAI Hackathon by Hugging Face, Zama & EF. Participated in the Privacy-Preserving AI Hackathon with the same successful team from the Mistral AI competition. We developed ZAuth, an innovative authentication system leveraging Fully Homomorphic Encryption and face recognition. Our solution ensures complete privacy protection by keeping sensitive data (model weights and user embeddings) encrypted throughout the entire computation process, while implementing on-device image encoding and safeguards against reverse engineering attacks.",
+      link: "https://github.com/eithannak29", // remplace par le bon repo
+      skills: ["Hackathon", "FHE", "Concrete ML", "FaceNet", "Privacy-Preserving AI"]
     },
     {
-      name: "ExtensionKit",
+      name: "Specialized Lightweight LLMs (Mistral AI Hackathon - 3rd Prize)",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Third Prize at Mistral AI Hackathon. Pre-selected to participate in France's largest hackathon organized by Mistral AI and Cerebral Valley, following our victory at IADataHack. Competed alongside participants from top-tier companies like Hugging Face and NVIDIA. Working with a team of talented individuals, we developed a platform for creating specialized lightweight language models using RL post-training (Direct Preference Optimization). The project earned us 3rd place among 250 pre-selected participants.",
+      link: "https://devpost.com/...", // remplace par le bon Devpost
+      skills: ["Hackathon", "RLHF", "Direct Preference Optimization", "LLM Distillation"]
     },
+    {
+      name: "Echo - Memory Platform for Alzheimer’s Support (Mistral AI Hackathon x Alan)",
+      description:
+        "Echo is a memory support platform designed for Alzheimer’s patients and their families. It combines a shared digital album, a RAG-powered chatbot for reminiscence, and adaptive memory quizzes to strengthen recall and foster meaningful connections.",
+      link: "https://www.eithannakache.com/", // remplace par le bon lien
+      skills: ["Hackathon", "RAG", "LLMs", "Healthcare AI"]
+    },
+    {
+      name: "IADataHack - 1st Prize (French Ministry of Armed Forces)",
+      description:
+        "First Prize at IADataHack. After 3 months of AI/NLP courses, I participated with 5 classmates in the hackathon organized by the Ministry of the French Armed Forces. We won the 1st prize and it marked the beginning of my passion for hackathons.",
+      link: "https://www.eithannakache.com/",
+      skills: ["Hackathon", "NLP"]
+    }
   ],
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "Siemens Healthineers",
+      title: "AI Research Intern",
+      dateRange: "Mar 2025 – Present",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
-      ],
-    },
-    {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
-      bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
-      ],
-    },
-    {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
-      ],
-    },
+        "Designed an end-to-end VLM pipeline for clinical PDF ingestion; 15x faster (0.39s vs 7.22s/page).",
+        "Improved retrieval quality to 0.81 NDCG@5 (+23% vs baseline).",
+        "Built tool-using LLM agents for multi-step medical reasoning.",
+        "Led prompt engineering and evaluation for reliability and robustness."
+      ]
+    }
   ],
   education: [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
-      achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
+      school: "ENS Paris-Saclay",
+      degree: "Master MVA (Mathematics, Vision, Learning)",
+      dateRange: "Sep 2025 – Aug 2026",
+      achievements: []
     },
     {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
-      ],
+      school: "EPITA (École pour l’informatique et les techniques avancées)",
+      degree: "Master of Engineering - Artificial Intelligence & Big Data (GPA 4.0/4.0)",
+      dateRange: "Sep 2020 – Aug 2025",
+      achievements: []
     },
+    {
+      school: "California State University, Los Angeles (CSULA)",
+      degree: "Exchange Semester - Computer Science Engineering",
+      dateRange: "Jan 2022 – May 2022",
+      achievements: []
+    }
   ],
 };
