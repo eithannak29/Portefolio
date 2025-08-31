@@ -34,7 +34,7 @@ export const siteConfig = {
         "Winner for car model classification using ResNet18 and explainability techniques (Grad-CAM). Organized by the French Ministry of Armed Forces after 3 months of AI/NLP training, this hackathon marked the start of my passion for competitions.",
       link: "https://www.eithannakache.com/",
       skills: ["Hackathon", "PyTorch", "OpenCV", "NLP"]
-    }
+    },
     {
     name: "🛡️ Hugging Face x Zama Hackathon - ZAuth",
     description:
