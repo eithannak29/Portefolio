@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Eithan Nakache",
-  title: "AI Research Intern - Siemens Healthineers",
+  title: "MVA Master's Student @ ENS Paris-Saclay & IP Paris • Ex-Siemens Healthineers",
   description:
-    "Passionate about deep learning and always excited to learn, build and explore new ideas in AI.",
+    "MVA student (2025–2026). Ex-Siemens Healthineers (Cardiovascular AI). Applied AI & multimodal ML.",
   accentColor: "#1d4ed8",
   social: {
     email: "eithannakache@gmail.com",
@@ -11,63 +11,88 @@ export const siteConfig = {
     // twitter: "",
   },
   aboutMe:
-    "AI enthusiast and research intern passionate about building smarter and more reliable AI systems. I enjoy working with language models, turning complex ideas into real-world solutions. Curious, hands-on and always learning.",
-  skills: [],
+    "MVA (ENS Paris-Saclay & IP Paris, 2025–2026). Former AI Research Intern at Siemens Healthineers (Cardiovascular AI). I build practical, reliable ML systems — with a focus on multimodal models, LLMs, and retrieval.",
+  skills: [
+    "Python", "PyTorch", "TensorFlow", "Scikit-Learn",
+    "Hugging Face", "Lightning",
+    "Vision", "NLP", "Multimodal AI",
+    "RAG", "Evaluation", "MLOps (basics)"
+  ],
+
   projects: [
-  {
-    name: "NanoDiffVision - Vision Transformers with Differential Attention",
-    description:
-      "Compact ViT with differential attention; up to 96.03% on MNIST and 86.73% on FashionMNIST.",
+    {
+      name: "EchoRAG (Siemens Healthineers) — Clinical Guidelines RAG",
+      description:
+        "Multimodal RAG on ASE/ACC cardiology guidelines and flowcharts; visual-document retrieval + reranking; evaluation with ViDoRe/FlowVQA-style tasks.",
+      link: "https://www.eithannakache.com/", // public write-up or portfolio section
+      skills: ["Healthcare AI", "RAG", "Multimodal", "Retrieval", "Evaluation"]
+    },
+    {
+      name: "EchoVQA — Visual QA on Echo Reports",
+      description:
+        "Prototype visual-QA pipeline on cardiac imaging documents; Col(Qwen)-based retrieval, structured outputs, and rubric-style scoring.",
+      link: "https://www.eithannakache.com/", // public write-up (si dispo)
+      skills: ["VQA", "Vision+Text", "Retrieval", "LLMs"]
+    },
+    {
+      name: "🏅 Mistral AI Hackathon — Specialized Lightweight LLMs (Top 3)",
+      description:
+        "Platform for task-specific lightweight LLMs with preference optimization; ranked Top 3 among 250+ teams.",
+      link: "https://devpost.com/...", // TODO: remplacer par le lien Devpost
+      skills: ["LLMs", "Preference Optimization", "Distillation"]
+    },
+    {
+      name: "🥇 French Army Hackathon — IADataHack (Winner)",
+      description:
+        "Car-model classification with ResNet18 + explainability (Grad-CAM); end-to-end data to deployment prototype.",
+      link: "https://www.eithannakache.com/", // ou article de blog si dispo
+      skills: ["PyTorch", "Computer Vision", "Explainability"]
+    },
+    {
+      name: "🛡️ ZAuth — HF x Zama Hackathon",
+      description:
+        "Privacy-preserving face recognition using FHE (Concrete-ML); embeddings et poids chiffrés pendant l’inférence.",
+      link: "https://github.com/eithannak29", // TODO: remplacer par le repo si public
+      skills: ["FHE", "Privacy", "Python", "Concrete-ML"]
+    },
+    {
+      name: "🫧 Echo — Mistral AI x Alan",
+      description:
+        "Memory support app for Alzheimer’s: shared album, RAG chatbot, adaptive memory quizzes.",
+      link: "https://www.eithannakache.com/", // TODO: remplacer par le projet dédié
+      skills: ["RAG", "LLMs", "Healthcare"]
+    },
+    {
+      name: "NanoDiffVision — Vision Transformers with Differential Attention",
+      description:
+        "Compact ViT with differential attention; up to 96.03% (MNIST) and 86.73% (FashionMNIST).",
       link: "https://www.eithannakache.com/",
       skills: ["Personal Project", "PyTorch", "Vision Transformers"]
-    },
-    {
-      name: "🏅 Mistral AI Hackathon - Specialized Lightweight LLMs (3rd Prize)",
-      description:
-        "Pre-selected for France’s largest hackathon (Mistral AI x Cerebral Valley). Built a platform for creating task-specific lightweight LLMs using Direct Preference Optimization. Won 3rd prize among 250 teams, competing alongside Hugging Face & NVIDIA.",
-      link: "https://devpost.com/...", // replace with Devpost
-      skills: ["Hackathon", "RLHF", "Direct Preference Optimization", "LLM Distillation"]
-    },
-    {
-      name: "🥇 French Army Hackathon - IADataHack",
-      description:
-        "Winner for car model classification using ResNet18 and explainability techniques (Grad-CAM). Organized by the French Ministry of Armed Forces after 3 months of AI/NLP training, this hackathon marked the start of my passion for competitions.",
-      link: "https://www.eithannakache.com/",
-      skills: ["Hackathon", "PyTorch", "OpenCV", "NLP"]
-    },
-    {
-    name: "🛡️ Hugging Face x Zama Hackathon - ZAuth",
-    description:
-      "Developed a privacy-preserving face recognition system using Fully Homomorphic Encryption (FHE). Sensitive data (model weights & embeddings) remains encrypted during computation, with on-device encoding and safeguards against reverse engineering.",
-    link: "https://github.com/eithannak29", // replace with repo
-    skills: ["Hackathon", "Python", "FHE", "Concrete ML", "Privacy-Preserving AI"]
-  },
-  {
-    name: "🫧 Mistral AI Hackathon x Alan - Echo",
-    description:
-      "Echo is a memory support platform for Alzheimer’s patients and families. It combines a shared digital album, a RAG-powered chatbot for reminiscence, and adaptive memory quizzes. Built during the Mistral AI Hackathon with Alan, alongside 250+ selected participants.",
-    link: "https://www.eithannakache.com/", // replace with proper link
-    skills: ["Hackathon", "RAG", "LLMs", "Healthcare AI"]
-  },
-],
+    }
+  ],
+
   education: [
     {
-      school: "ENS Paris-Saclay",
+      school: "ENS Paris-Saclay & Institut Polytechnique de Paris",
       degree: "Master MVA (Mathematics, Vision, Learning)",
       dateRange: "Sep 2025 – Aug 2026",
-      achievements: []
+      achievements: [
+        // ex: "Courses: Deep Learning, Optimal Transport, ALTEGRAD, PGMs, ..."
+      ]
     },
     {
-      school: "EPITA (École pour l’informatique et les techniques avancées)",
-      degree: "Master of Engineering - Artificial Intelligence & Big Data (GPA 4.0/4.0)",
+      school: "EPITA",
+      degree: "Diplôme d'Ingénieur — Major SCIA (AI & Data Science)",
       dateRange: "Sep 2020 – Aug 2025",
-      achievements: []
+      achievements: [
+        // ex: "GPA 4.0/4.0", "Hackathon winner", ...
+      ]
     },
     {
       school: "California State University, Los Angeles (CSULA)",
-      degree: "Exchange Semester - Computer Science Engineering",
+      degree: "Exchange Semester — Computer Science Engineering",
       dateRange: "Jan 2022 – May 2022",
       achievements: []
     }
-  ],
+  ]
 };
