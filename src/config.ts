@@ -4,6 +4,7 @@ export const siteConfig = {
   description:
     "MVA student (2025–2026). Ex-Siemens Healthineers (Cardiovascular AI). Applied AI & multimodal ML.",
   accentColor: "#1d4ed8",
+  resumeUrl: "/resume.pdf",
   social: {
     email: "eithannakache@gmail.com",
     linkedin: "https://www.linkedin.com/in/eithannakache/",
