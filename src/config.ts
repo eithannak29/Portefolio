@@ -11,8 +11,7 @@ export const siteConfig = {
     github: "https://github.com/eithannak29",
   },
   aboutMe:
-    "MVA (ENS Paris-Saclay & IP Paris, 2025–2026). Former AI Research Intern at Siemens Healthineers (Cardiovascular AI). I build practical, reliable ML systems — with a focus on multimodal models, LLMs, and retrieval.",
-  skills: [
+    "24-year-old AI enjoyer 🤠. I like tinkering, trying ideas quickly, and running experiments to see what actually works."
     "Python", "PyTorch", "TensorFlow", "Scikit-Learn",
     "Hugging Face", "Lightning",
     "Vision", "NLP", "Multimodal AI",
