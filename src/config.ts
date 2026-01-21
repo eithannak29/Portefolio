@@ -10,6 +10,15 @@ export const siteConfig = {
     github: "https://github.com/eithannak29",
   },
   aboutMe: "AI enjoyer 🤠, focused on Large Language Models & Deep Learning.",
+  skills: [
+    "Large Language Models",
+    "Deep Learning",
+    "Multimodal ML",
+    "RAG",
+    "Computer Vision",
+    "PyTorch",
+    "Python",
+  ],
 
   projects: [
     {
