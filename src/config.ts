@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Eithan Nakache",
-  title: "MVA Master's Student @ ENS Paris-Saclay & IP Paris • Ex-Siemens Healthineers",
+  title: "MVA Master's Student @ ENS Paris-Saclay",
   description:
-    "MVA student (2025–2026). Ex-Siemens Healthineers (Cardiovascular AI). Applied AI & multimodal ML.",
+    "MVA student (2025–2026). Applied AI & multimodal ML.",
   accentColor: "#1d4ed8",
   resumeUrl: "/resume.pdf",
   social: {
@@ -11,11 +11,7 @@ export const siteConfig = {
     github: "https://github.com/eithannak29",
   },
   aboutMe:
-    "24-year-old AI enjoyer 🤠. I like tinkering, trying ideas quickly, and running experiments to see what actually works."
-    "Python", "PyTorch", "TensorFlow", "Scikit-Learn",
-    "Hugging Face", "Lightning",
-    "Vision", "NLP", "Multimodal AI",
-    "RAG", "Evaluation", "MLOps (basics)"
+    "AI enjoyer 🤠, focused on Large Language Models & Deep Learning."
   ],
 
   projects: [
@@ -79,7 +75,7 @@ export const siteConfig = {
 
   education: [
     {
-      school: "ENS Paris-Saclay & Institut Polytechnique de Paris",
+      school: "ENS Paris-Saclay",
       degree: "Master MVA (Mathematics, Vision, Learning)",
       dateRange: "Sep 2025 – Aug 2026",
       achievements: []
