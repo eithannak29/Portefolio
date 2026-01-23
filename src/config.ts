@@ -22,7 +22,7 @@ export const siteConfig = {
 
   projects: [
     {
-      name: "EchoRAG (Siemens Healthineers) — Clinical Guidelines RAG",
+      name: "EchoRAG — Clinical Guidelines RAG",
       description:
         "Multimodal RAG on ASE/ACC cardiology guidelines and flowcharts; visual-document retrieval + reranking; evaluation with ViDoRe/FlowVQA-style tasks.",
       link: "https://www.eithannakache.com/",
@@ -35,6 +35,16 @@ export const siteConfig = {
       link: "https://www.eithannakache.com/",
       skills: ["VQA", "Vision+Text", "Retrieval", "LLMs"],
     },
+    {
+      name: "NanoDiffVision — Vision Transformers with Differential Attention",
+      description:
+        "Compact ViT with differential attention; up to 96.03 percent (MNIST) and 86.73 percent (FashionMNIST).",
+      link: "https://github.com/eithannak29/NanoDiffVision",
+      skills: ["Personal Project", "PyTorch", "Vision Transformers"],
+    },
+  ],
+
+  hackathons: [
     {
       name: "🏅 Mistral AI Hackathon — Specialized Lightweight LLMs (Top 3)",
       description:
@@ -52,30 +62,9 @@ export const siteConfig = {
     {
       name: "🛡️ ZAuth — HF x Zama Hackathon",
       description:
-        "Privacy-preserving face recognition using FHE (Concrete-ML); embeddings et poids chiffrés pendant l’inférence.",
+        "Privacy-preserving face recognition using FHE (Concrete-ML); encrypted embeddings and weights at inference time.",
       link: "https://github.com/chuklee/HACKATHON-ZAMA-FHE-ENCRYPTION",
       skills: ["FHE", "Privacy", "Python", "Concrete-ML"],
-    },
-    {
-      name: "🫧 Echo — Mistral AI x Alan",
-      description:
-        "Memory support app for Alzheimer’s: shared album, RAG chatbot, adaptive memory quizzes.",
-      link: "https://github.com/camilziane/HACKATON-MISTRAL-ALAN-ECHO",
-      skills: ["RAG", "LLMs", "Healthcare"],
-    },
-    {
-      name: "NanoDiffVision — Vision Transformers with Differential Attention",
-      description:
-        "Compact ViT with differential attention; up to 96.03 percent (MNIST) and 86.73 percent (FashionMNIST).",
-      link: "https://github.com/eithannak29/NanoDiffVision",
-      skills: ["Personal Project", "PyTorch", "Vision Transformers"],
-    },
-    {
-      name: "CCVAE — Semi-Supervised Variational Autoencoders (MVA Project)",
-      description:
-        "Reimplementation and study of CCVAE and semi-supervised VAEs on MNIST and FashionMNIST; how VAEs capture label structure and leverage partially labeled data.",
-      link: "https://github.com/eithannak29/semi-supervised-vae",
-      skills: ["VAEs", "Generative Models", "Semi-Supervised Learning", "PyTorch"],
     },
   ],
 
